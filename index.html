@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="hearts-container"></div>
+
+    <div id="main-container" class="container">
+        <div class="gif-container">
+            <img src="rosememe.jpg" alt="Cute Bear" id="main-img">
+        </div>
+        
+        <h1>Will you be my Valentine?</h1>
+        
+        <div class="buttons">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+    </div>
+
+    <div id="success-container" class="hidden">
+        <h1 class="yay-text">I love uu so muchh ❤️</h1>
+        
+        <div class="letter-box">
+            <p>
+                My Dearest Love, <br><br>
+                I am so happy you said yes! You are the best thing that ever happened to me.
+                I can't wait to spend Valentine's Day with you! <br><br>
+                Love, [Your Name]
+            </p>
+        </div>
+
+        <h3>Us ❤️</h3>
+        <div class="slideshow-container">
+            <a class="prev-btn" onclick="moveSlide(-1)">&#10094;</a>
+            
+            <div class="slide fade">
+                <img src="us1.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="us2.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="us3.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="us4.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="us5.jpg" style="width:100%">
+            </div>
+
+            <a class="next-btn" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
